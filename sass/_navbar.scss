@@ -1,0 +1,11 @@
+.uk-navbar-nav>li>a {
+  color: #fff;
+}
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #1e87f0;
+}
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+  font-family: $font-main;
+  letter-spacing: 1px;
+  font-weight: bold;
+}

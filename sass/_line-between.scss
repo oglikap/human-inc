@@ -1,0 +1,37 @@
+.line-between {
+  text-align: center;
+  margin: .5em 0;
+  opacity: .7;
+  @include flexbox;
+  @include justify-content(center);
+  &:before {
+    margin-right: 12px;
+  }
+  &:after {
+    margin-left: 12px;
+  }
+  &:before, &:after {
+    @include flex-grow(0.5);
+    background-color: #444;
+    position: relative;
+    top: 16px;
+    content: '\a0';
+    height: 1px;
+  }
+}
+
+.style4 {
+  .line-between {
+    &:before, &:after {
+      background-color: lightgrey;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+
+  .line-between {
+    margin: 2em 0;
+  }
+
+}

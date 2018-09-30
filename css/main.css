@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+English+SC|Lato");
+@font-face {
+  font-family: 'AvenirNextLTPro-Medium';
+  src: url("../fonts/2FDF27_8_0.woff2") format("woff2"), url("../fonts/2FDF27_8_0.woff") format("woff"), url("../fonts/2FDF27_8_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Rockwell';
+  src: url("../fonts/rockwell.ttf") format("truetype"); }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rockwell', serif;
+  font-family: 'IM Fell English SC', serif;
+  color: #000;
+  text-transform: uppercase; }
+
+body {
+  font-family: "AvenirNextLTPro-Medium", sans-serif; }
+
+.uk-card-default {
+  color: #222; }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.uk-navbar-nav > li > a {
+  color: #fff; }
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #1e87f0; }
+
+.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+  font-family: "AvenirNextLTPro-Medium", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold; }
+
+.line-between {
+  text-align: center;
+  margin: .5em 0;
+  opacity: .7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center; }
+  .line-between:before {
+    margin-right: 12px; }
+  .line-between:after {
+    margin-left: 12px; }
+  .line-between:before, .line-between:after {
+    -webkit-box-flex: 0.5;
+    -webkit-flex-grow: 0.5;
+    -moz-flex-grow: 0.5;
+    -ms-flex-positive: 0.5;
+    flex-grow: 0.5;
+    background-color: #444;
+    position: relative;
+    top: 16px;
+    content: '\a0';
+    height: 1px; }
+
+.style4 .line-between:before, .style4 .line-between:after {
+  background-color: lightgrey; }
+
+@media screen and (min-width: 480px) {
+  .line-between {
+    margin: 2em 0; } }
+#footer {
+  height: 25vh;
+  background: #1e87f0;
+  color: white;
+  margin: 2em 0 0 0;
+  font-size: 14px; }
+
+/*# sourceMappingURL=main.css.map */
