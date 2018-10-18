@@ -13,6 +13,7 @@
 
 $font-main: 'Rockwell';
 $font-main: 'AvenirNextLTPro-Medium', sans-serif;
+$blue: #1e87f0;
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Rockwell', serif;
   font-family: 'IM Fell English SC', serif;
@@ -32,6 +33,14 @@ body {
   @include align-items(center);
   @include justify-content(center);
   @include flex-wrap(wrap);
+}
+
+@media screen and ( max-width: 639px ) {
+
+  html {
+    font-size: 13px;
+  }
+
 }
 
 @import "navbar";

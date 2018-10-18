@@ -1,5 +1,5 @@
-    <footer id="footer" class="flex uk-child-width-1-3@s uk-text-center" uk-grid>
-      <div>
+    <footer id="footer" class="flex uk-child-width-1-3@s uk-text-center" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true">
+      <div class="uk-card uk-light">
         <p>Human Inc. - &copy; <?php echo date('Y'); ?></p>
       </div>
       <div>
@@ -8,11 +8,9 @@
         </a>
       </div>
       <div>
-        <ul class="uk-list">
-          <li>P/a Voormalige Gravin Aleidaschool</li>
-          <li>Oostsingel 9</li>
-          <li>3112GC Schiedam</li>
-        </ul>
+        <div class="uk-card uk-light">
+          <p>p/a Voormalige Gravin Aleidaschool | Oostsingel 9 | 3112GC Schiedam</p>
+        </div>
       </div>
     </footer>
 

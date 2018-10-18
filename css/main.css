@@ -38,16 +38,30 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
-.uk-navbar-nav > li > a {
-  color: #fff; }
+@media screen and (max-width: 639px) {
+  html {
+    font-size: 13px; } }
+.uk-subnav > * > :first-child {
+  color: #1e87f0; }
 
-.uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #1e87f0; }
-
-.uk-navbar-item, .uk-navbar-nav > li > a, .uk-navbar-toggle {
+.uk-navbar-item, .uk-navbar-toggle {
   font-family: "AvenirNextLTPro-Medium", sans-serif;
   letter-spacing: 1px;
   font-weight: bold; }
+
+.uk-nav > li > a {
+  text-transform: uppercase;
+  padding: 1em 0;
+  text-align: center; }
+
+.bs-motto {
+  justify-content: flex-start; }
+  .bs-motto p {
+    width: 50%;
+    font-variant: all-small-caps;
+    padding: 1em;
+    opacity: .8;
+    border-left: 1px solid #eaeaea; }
 
 .line-between {
   text-align: center;

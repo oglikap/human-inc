@@ -8,23 +8,26 @@
   <body <?php body_class(); ?>>
     <header>
       <!-- NAVIGATION -->
-      <nav class="uk-navbar-container" uk-navbar>
+      <nav class="uk-navbar-container uk-padding-small" uk-navbar>
         <div class="uk-navbar-left">
-            <a class="uk-navbar-item uk-logo uk-align-left uk-margin-left" href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri() . '/img/logo-humaninc-white.svg'; ?>" style="width:25%;" alt="human inc logo"></a>
+          <a class="uk-navbar-item uk-logo uk-visible@s" href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri() . '/img/logo-humaninc.svg'; ?>" width="150" height="150" alt="human inc logo" uk-svg></a>
+          <a class="uk-navbar-item uk-logo uk-hidden@s" href="<?php bloginfo( 'url' ); ?>"><img src="<?php echo get_template_directory_uri() . '/img/logo-humaninc.svg'; ?>" width="75" height="75" alt="human inc logo" uk-svg></a>
+        </div>
+        <div class="uk-navbar-item uk-dark uk-visible@s bs-motto">
+          <p><?php bloginfo('description'); ?> <span uk-icon="quote-right"></span></p>
         </div>
         <div class="uk-navbar-right">
           <?php wp_nav_menu(
             array(
               'theme_location' => 'humaninc_menu',
               'container' => 'ul',
-              'menu_class' => 'uk-navbar-nav uk-visible@l'
+              'menu_class' => 'uk-subnav uk-subnav-divider uk-flex-nowrap uk-visible@l'
              ) ); ?>
 
            <!-- MOBILE OFFCANVAS -->
            <div class="uk-offcanvas-content uk-hidden@l">
 
-             <a href="#hambie" uk-toggle uk-icon="table" class="uk-position-top-right uk-margin-top uk-margin-right"></a>
-
+             <a href="#hambie" uk-toggle uk-icon="menu" class="uk-position-top-right uk-margin-top uk-margin-right uk-dark"></a>
 
              <div id="hambie" uk-offcanvas>
                <div class="uk-offcanvas-bar">

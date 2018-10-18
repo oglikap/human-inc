@@ -1,5 +1,4 @@
-<div id="sidebar" class="uk-margin">
-  <hr />
+<div id="sidebar" class="uk-padding">
   <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
     <?php if( is_active_sidebar( 'sidebar-1' ) ): ?>
       <?php dynamic_sidebar( 'sidebar-1' ) ?>

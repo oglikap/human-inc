@@ -1,14 +1,12 @@
 <?php get_header(); ?>
 
 <div class="uk-container uk-container-large" uk-scrollspy="cls:uk-animation-fade; delay:100">
-  <h2 class="line-between">Eerste deel van Human Inc. in januari 2019 op tournee!</h2>
+  <h2 class="uk-padding uk-heading-line uk-text-center"><span>Eerste deel van Human Inc. in januari 2019 op tournee!</span></h2>
 
   <?php //* The Query
   $exec_query = new WP_Query( array (
   'post_type' => 'producties',
   'orderby' => 'menu_order',
-  //  'job_role'  => 'executive',
-  //'offset' => 3,
   'posts_per_page' => 1
   ) );
 
@@ -18,7 +16,7 @@
       <?php while ( $exec_query->have_posts() ): $exec_query->the_post(); ?>
       <div class="uk-width-expand@s">
         <div class="uk-card uk-card-default">
-          <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'full' ); ?> style="background-image: url('<?php echo $backgroundImg[0]; ?>'); background-repeat:no-repeat;height:800px;background-position:top;">
+          <div class="uk-height-large uk-background-cover uk-overflow-hidden uk-light uk-flex uk-flex-top" <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID), 'medium-large' ); ?> style="background-image: url('<?php echo $backgroundImg[0]; ?>'); background-repeat:no-repeat;background-position:25% 20%;">
           </div>
           <div class="uk-card-body">
             <h1 class="uk-card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
@@ -40,8 +38,6 @@
         $exec_query = new WP_Query( array (
         'post_type' => 'nieuws',
         'orderby' => 'menu_order',
-        //  'job_role'  => 'executive',
-        //'offset' => 3,
         'posts_per_page' => 3
         ) );
 
@@ -49,7 +45,7 @@
         if ( $exec_query->have_posts() ) { ?>
           <?php while ( $exec_query->have_posts() ): $exec_query->the_post(); ?>
 
-            <div class="uk-card uk-card-default">
+            <div class="uk-card" style="box-shadow: 1px 1px 0 #f5f5f5;">
                 <div class="uk-card-header">
                     <div class="uk-grid-small uk-flex-middle" uk-grid>
                         <div class="uk-width-auto">

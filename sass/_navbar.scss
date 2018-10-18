@@ -1,11 +1,26 @@
-.uk-navbar-nav>li>a {
-  color: #fff;
+.uk-subnav>*>:first-child {
+  color: $blue;
 }
-.uk-navbar-container:not(.uk-navbar-transparent) {
-  background: #1e87f0;
-}
-.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+.uk-navbar-item, .uk-navbar-toggle {
   font-family: $font-main;
   letter-spacing: 1px;
   font-weight: bold;
+}
+.uk-nav>li>a {
+  text-transform: uppercase;
+  padding: 1em 0;
+//  border-bottom: thin solid;
+  text-align: center;
+}
+
+.bs-motto {
+  justify-content: flex-start;
+  p {
+    width: 50%;
+  //  color: white;
+    font-variant: all-small-caps;
+    padding: 1em;
+    opacity: .8;
+    border-left: 1px solid #eaeaea;
+  }
 }
